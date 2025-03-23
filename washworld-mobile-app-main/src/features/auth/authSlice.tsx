@@ -25,7 +25,7 @@ export async function saveItemAsync(key: string, value: string) {
 
 const getToken = async () => {
   console.log('[getToken] Retrieving token...');
-  await saveItemAsync('userToken', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWxAYWRtaW4uY29tIiwiaWQiOjEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJBZG1pbiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDcyMjc1NH0.mihs1e_6l_qlRW9-eOLc_2hM37-dIEZH0AOOOh-MhnY');
+  await saveItemAsync('userToken', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1haWxAYWRtaW4uY29tIiwiaWQiOjEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJBZG1pbiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MjE1Mjg4NH0.RjyYhAoZdB3dfX-S9o_1TZ_ThrGN9caNDuTQqoqXhEU');
   const token = await SecureStore.getItemAsync('userToken');
   console.log('[getToken] Retrieved token:', token);
   return token;
